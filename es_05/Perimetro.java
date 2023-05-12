@@ -1,8 +1,9 @@
 /*
-Creare un programma che chieda all'utente di inserire la lunghezza del latoe restituisce in output
+Creare un programma che chieda all'utente di inserire la lunghezza del lato e restituisce in output
 l'area e il perimetro del quadratp utilizzando la variabile lato
+
 */
-import static java.lang.Math.*;
+//import static java.lang.Math.*;
 
 import java.util.Scanner;
 
@@ -13,14 +14,21 @@ public class Perimetro {
 
     System.out.print("Inserisci la lunghezza del lato "); //Richiedo la lungezza del lato
     double lato = input.nextDouble(); //leggo l'input variabile lato
-    if (lato >= 400 || lato < 1) {
-      System.out.println("Il lato del quadrato non può essere più di 400 cm");
-    } else {
-      double power = 2;
-      double area = Math.pow(lato, power);
-      System.out.println("■ Il perimetro del quadrato è " + lato * 4 + " cm");
-      System.out.print("■ L'area del quadrato è " + area + " cm²");
+
+    if (
+      lato >= 400
+    ) { //|| lato < 1)  //metto le condizioni
+      System.out.println("■ Il lato non può essere più grande di ");
     }
+    if (lato < 1) {
+      System.out.println("■ Il lato non può e minore di 1 cm");
+    } else {
+      double power = 2; //specifico la potenza
+      double area = Math.pow(lato, power); //elevo a potenza calcolando l'area
+      System.out.println("■ Il perimetro del quadrato è " + lato * 4 + " cm"); //stampo il perimetro calcolandolo con lato * 4
+      System.out.print("■ L'area del quadrato è " + area + " cm²"); //stampo l'area
+    }
+
     input.close();
   }
 }
