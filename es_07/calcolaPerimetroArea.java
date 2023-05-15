@@ -2,6 +2,7 @@
 Creare un programma che chieda all'utente di inserire la lunghezza del latoe restituisce in output
 l'area e il perimetro del quadratp utilizzando la variabile lato
 */
+
 import java.util.Scanner;
 
 public class calcolaPerimetroArea {
@@ -10,7 +11,6 @@ public class calcolaPerimetroArea {
     Scanner input = new Scanner(System.in);
 
     System.out.println("Inserisci il tuo nome ");
-
     String nome = input.nextLine();
 
     System.out.print("Inserisci la lunghezza del lato ");
@@ -18,7 +18,7 @@ public class calcolaPerimetroArea {
     lato = input.nextInt();
     int area;
     int perimetro;
-
+    //int soglia = 40
     //lato = 5; // assegno il valore 5 alla variabile lato
 
     area = lato * lato;
@@ -30,6 +30,7 @@ public class calcolaPerimetroArea {
         " ■ Non è consentito inserire una misura maggiore o uguale a 40 cm"
       );
     }
+
     if (lato < 1) {
       System.out.println(nome + " ■ nome Il valore inserito è troppo piccolo");
     } else {
@@ -45,5 +46,5 @@ public class calcolaPerimetroArea {
   }
 }
 /*
-  Note per collaboratori 
-  */
+Note per collaboratori 
+*/
