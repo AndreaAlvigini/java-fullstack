@@ -2,15 +2,15 @@
 Creare un programma che chieda all'utente di inserire la lunghezza del latoe restituisce in output
 l'area e il perimetro del quadratp utilizzando la variabile lato
 */
-import java.util.Scanner; //libreria per poter utilizzare i metodi di scanner
+import java.util.Scanner;
 
-public class calcolaPerimetroArea { // classe chiamata come nome file
+public class calcolaPerimetroArea {
 
   public static void main(String[] args) {
-    Scanner input = new Scanner(System.in); //creo un oggetto scanner chiamato input;
-    System.out.print("Inserisci la lunghezza del lato "); //Richiedo la lungezza del lato
+    Scanner input = new Scanner(System.in);
+    System.out.print("Inserisci la lunghezza del lato ");
 
-    int lato; // lato sarà il parametro che utilizzarò per i calcoli
+    int lato;
     int area;
     int perimetro;
 
@@ -20,9 +20,9 @@ public class calcolaPerimetroArea { // classe chiamata come nome file
 
     area = lato * lato;
     perimetro = lato * 4;
-    System.out.println(lato); // Stampa variabile lato
-    System.out.println(area); //Stampa variabile lato
-    System.out.println(perimetro); //Stampa variabile perimetro
+    System.out.println("■ Il lato del quadrato è " + lato); // concateno testo e variabili
+    System.out.println("■ Il perimetro del quadrato è " + lato * 4 + " cm");
+    System.out.println("■ L'area del quadrato è " + area + " cm²");
     input.close();
   }
 }
