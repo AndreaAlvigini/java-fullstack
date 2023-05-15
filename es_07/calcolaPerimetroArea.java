@@ -7,7 +7,8 @@ public class calcolaPerimetroArea { // classe chiamata come nome file
 
   public static void main(String[] args) {
     //le istruzioni vanno qui, nel metodo main
-
+    int lato; //sarà il parametro che utilizzarò per i calcoli
+    lato = 3;
   }
 }
 /*
