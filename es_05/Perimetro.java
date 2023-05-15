@@ -15,16 +15,20 @@ public class Perimetro {
     System.out.print("Inserisci la lunghezza del lato "); //Richiedo la lungezza del lato
     double lato = input.nextDouble(); //leggo l'input variabile lato
 
-    if (
-      lato >= 400
-    ) { //|| lato < 1)  //metto le condizioni
-      System.out.println("■ Il lato non può essere più grande di ");
+    if (lato >= 400) { //|| lato < 1)  //metto le condizioni
+      System.out.println(
+        "■ Non è consentito inserire una misura maggiore di 400 cm"
+      );
     }
+
     if (lato < 1) {
-      System.out.println("■ Il lato non può e minore di 1 cm");
+      System.out.println(
+        "■ Non è consentito inserire una misura minore di 1 cm"
+      );
     } else {
       double power = 2; //specifico la potenza
       double area = Math.pow(lato, power); //elevo a potenza calcolando l'area
+
       System.out.println("■ Il perimetro del quadrato è " + lato * 4 + " cm"); //stampo il perimetro calcolandolo con lato * 4
       System.out.print("■ L'area del quadrato è " + area + " cm²"); //stampo l'area
     }
