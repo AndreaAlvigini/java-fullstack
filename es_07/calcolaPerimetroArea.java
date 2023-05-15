@@ -21,11 +21,15 @@ public class calcolaPerimetroArea {
     area = lato * lato;
     perimetro = lato * 4;
 
-    if (lato >= 40 || lato < 1) { // aggiungo una seconda condizione
+    if (lato >= 40) {
       System.out.println(
-        "■ Non è consentito inserire una misura maggiore di 40 cm o minore di 1 cm"
+        "■ Non è consentito inserire una misura maggiore o uguale a 40 cm"
       );
-    } else { //se l'input è < o = a 40
+    }
+    if (lato < 1) {
+      System.out.println("■ Il valore inserito è troppo piccolo");
+    } else {
+      //se l'input è < o = a 40
       System.out.println("■ Il lato del quadrato è " + lato); // concateno testo e variabili
       System.out.println("■ Il perimetro del quadrato è " + lato * 4 + " cm");
       System.out.println("■ L'area del quadrato è " + area + " cm²");
