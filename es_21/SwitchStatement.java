@@ -18,6 +18,7 @@ public class SwitchStatement {
 
             case 2:
                 System.out.println("Hai inserito 2");
+                break;
 
             case 3:
                 System.out.println("Hai inserito 3");
