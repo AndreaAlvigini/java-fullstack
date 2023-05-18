@@ -27,17 +27,24 @@ public class PrintList {
         System.out.println("Quale elemento vuoi rimuovere dalla lista?");
         String frutto = input.next();
 
-        if (frutto.equals("Mela") || frutto.equals("mela")) {
-            fruits.remove(0);
-        } else if (frutto.equals("Banana") || frutto.equals("banana")) {
-            fruits.remove(1);
-        } else if (frutto.equals("Arancia") || frutto.equals("arancia")) {
-            fruits.remove(2);
-        }
         /*
-         * int daEliminare = input.nextInt;
-         * fruits.remove(daEliminare);
+         * if (frutto.equals("Mela") || frutto.equals("mela"))
+         * {
+         * fruits.remove(0);
+         * }
+         * else if (frutto.equals("Banana") || frutto.equals("banana"))
+         * {
+         * fruits.remove(1);
+         * }
+         * else if (frutto.equals("Arancia") || frutto.equals("arancia"))
+         * {
+         * fruits.remove(2);
+         * }
          */
+
+        int daEliminare = input.nextInt;
+        fruits.remove(daEliminare);
+
         System.out.println("\n");
         System.out.println("Ecco la lista aggiornata!");
         System.out.println("\n");
@@ -47,6 +54,7 @@ public class PrintList {
             System.out.println(fruit);
 
         }
+        input.close();
     }
 
 }

@@ -1,4 +1,5 @@
 public class arrayStr
+
 {
      public static void main(String[] args) 
    {
@@ -6,11 +7,11 @@ public class arrayStr
     
       for (String amico : amici) 
        {
-        System.out.println(amico);
+         System.out.println(amico);
 
        }
     }
-  }
+}
  
   
 
