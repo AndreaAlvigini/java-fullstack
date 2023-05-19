@@ -7,7 +7,7 @@ public class IndovinaNumRGreta {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        Random casuale = newRandom();
+        Random casuale = new Random();
 
         int casual = casuale.nextInt(100) + 1;
         int numeroUtente;

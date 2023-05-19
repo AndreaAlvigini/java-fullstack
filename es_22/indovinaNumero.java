@@ -10,8 +10,6 @@ public class indovinaNumero {
 
         int target = rand.nextInt(10) + 1;
 
-        ;
-
         int tentativo;
         boolean vincita = false;
         int numeroDitentativi = 0;
@@ -29,7 +27,8 @@ public class indovinaNumero {
                 System.out.println("troppo alto, riprova!");
             }
         }
-        System.out.println("Bravo! hai indovinato in " + tentativi + ".  il numero era " + target);
+
+        System.out.println("Bravo! hai indovinato in " + numeroDitentativi + " tentativi,  il numero era " + target);
 
         input.close();
 
