@@ -9,11 +9,11 @@ public class guessNumberRandom {
 
         Random rand = new Random();
 
-        int target = rand.nextInt(10);
+        int target = rand.nextInt(10) + 1;
         int tentativi = 0;
         int numerotentativi = 5;
 
-        while (tentativi < numerotentativi) {
+        while (tentativi > numerotentativi) {
 
             System.out.println("Inserisci un numero: ");
             numerogiocatore = input.nextInt();
