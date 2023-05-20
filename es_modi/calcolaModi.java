@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class calcolaModi {
             public static void main(String[] args){
             Scanner input = new Scanner(System.in);
-            
             //Array di stringhe contenente la scala cromatica
             String[] notes = {"C", "D#", "D", "Eb", "E", "F", "F#", "G","G#", "A", "Bb", "B"};
             //String[] modes = {"Ionian", "Dorian", "Phrygian", "Lydian", "Mixolydian", "Aeolian", "Locrian"};
@@ -49,17 +48,11 @@ public class calcolaModi {
             else if (selectedScale.equals("Aeolian"))
             {
                 Intervals =IntervalsAeolianScale;
-            
             }
-            else if (selectedScale.equals("Aeolian"))
-            {
-                Intervals =IntervalsAeolianScale;
-            
             }
             else if (selectedScale.equals("Locrian"))
             {
                 Intervals =IntervalsLocrianScale;
-            
             }
             else
             {
@@ -67,27 +60,21 @@ public class calcolaModi {
                 //scanner.close();
                 return;
             }
-            
                 int currentNote = 0;
                 for (int interval : Intervals)
                 {
                     System.out.println(notes[currentNote]);
                     currentNote = (currentNote + interval);
                 }
-        
         }
 
 }
 
-            
-
-            
-            
 
 
 
 
 
 
-        
-    
+
+

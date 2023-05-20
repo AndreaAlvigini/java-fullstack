@@ -4,34 +4,31 @@ public class CalcolaScala2 {
     public static void main(String[] args) {
         // array delle note
         String[] notes = {"C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"}; // scala cromatica
-
         // array degli intervalli per scale maggiore e minore
         int[] IntervalliScalaMaggiore = {2, 2, 1, 2, 2, 2, 1}; // scala maggiore
         int[] IntervalliScalaMinore = {2, 1, 2, 2, 1, 2, 2}; // scala minore
-
         // creazione dello scanner
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("Scegli una scala (maggiore o minore):");
         String scalaScelta = scanner.nextLine().toLowerCase();
         System.out.println(scalaScelta);
         // seleziona gli intervalli appropriati in base alla scelta dell'utente
         int[] IntervalloSelezionato;
-        if (scalaScelta.equals("maggiore")) {
+        if (scalaScelta.equals("maggiore")) 
+        {
             IntervalloSelezionato = IntervalliScalaMaggiore; // faccio corrispondere la scelta dell'utente alla scala
-        } else if (scalaScelta.equals("minore")) {
+        } else if (scalaScelta.equals("minore")) 
+        {
             IntervalloSelezionato = IntervalliScalaMinore; // faccio corrispondere la scelta dell'utente alla scala
         } else {
             System.out.println("Scelta non valida.");
             scanner.close();
             return;
         }
-
         // calcola e stampa le note della scala
         int currentNote = 0; // la nota di partenza dell'array con 0 perte da C e così via
         for (int interval : IntervalloSelezionato) // per ogni numero dell'array dell'intervallo
         {
-
             System.out.println(notes[currentNote]); // stampa la nota  della cromatica che corrisponde alla nota dell'array
             currentNote = (currentNote + interval);
             // currentNote = (currentNote + interval) % notes.length;
@@ -43,7 +40,6 @@ public class CalcolaScala2 {
             // System.out.println(currentNote);
             
         }
-
         scanner.close();
     }
 }
