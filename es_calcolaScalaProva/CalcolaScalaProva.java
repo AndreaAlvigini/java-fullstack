@@ -1,5 +1,4 @@
-//package java_repository.java-fullstack.CalcolaScala;
-//import java.lang.reflect.Array;
+import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class CalcolaScalaProva {
@@ -62,7 +61,7 @@ public class CalcolaScalaProva {
             int currentNote = 0;
             for (int interval : selectInterval) 
             {
-                System.out.println(notes(currentNote));
+                System.out.println(notes());
                 currentNote = (currentNote + interval);
             }
             
