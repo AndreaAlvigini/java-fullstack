@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class CalcolaScala2 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         // array delle note
         String[] notes = {"C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"}; // scala cromatica
         // array degli intervalli per scale maggiore e minore
