@@ -7,11 +7,11 @@ public class CercaLista
 {
         public static void main(String[] args)
         {
-            Scanner input = new Scanner(System.in);
+            Scanner input = new Scanner(System.in);//
             List<String> lista = new ArrayList<String>();
-            System.out.println("Inserisci gli elementi della lista (inserisci \"fine\"  per terminare l'inserimento): ");
+            System.out.println("Inserisci gli elementi della lista (inserisci \"fine\"  per terminare l'inserimento): ");// i back slash qui servono per stampare le virgolette
             String elemento = input.nextLine();
-            while (!elemento.equals("fine"))
+            while (!elemento.equals("fine"))//While con simbolo di diverso "elemento"
             {
                 lista.add(elemento);
                 elemento= input.nextLine();
