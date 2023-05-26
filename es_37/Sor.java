@@ -14,7 +14,9 @@ public class Sor
 
         Collections.sort(list);
 
-        Collections.replaceAll(list, "Banana", "gatto") ;
+        Collections.replaceAll(list, "Banana", "Gatto") ;
+        Collections.shuffle(list);
+        Collections.swap(list,0, 3);;
 
         System.out.println("Sorted list: " +list);
         for (String  fruit : list)

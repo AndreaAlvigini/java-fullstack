@@ -10,12 +10,10 @@ public class Leva
         list.add("Orange");
         list.add("Grapes");
         list.add("Strawberry");
-
         list.remove("Grapes");
         list.remove(1);
         
         
-
         System.out.println("List: " +list);
         for (String  fruit : list)
         {
@@ -23,6 +21,5 @@ public class Leva
             System.out.println(list.indexOf(fruit));
         }
         
-
     }
 }
