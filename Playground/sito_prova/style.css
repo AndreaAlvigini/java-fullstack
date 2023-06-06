@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat:ital,wght@0,400;0,700;1,200&display=swap');
+body
+{
+    background-color: #FFFACC;
+    font-family: Arial;
+    font-family: 'Montserrat', sans-serif;
+}
+h1
+{
+    color: #53131E;
+    font-size:32px;
+    font-family: 'Fredoka', sans-serif;
+}
+h2
+{
+    color: #5A464C;
+    font-family: 'Fredoka', sans-serif;
+}
+
+div#testata {
+    background-color: #B5D6B2;
+    width: 300px;
+    height: 300px;
+    
+}
+
+p {
+    font-weight: ;
+}
