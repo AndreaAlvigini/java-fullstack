@@ -19,7 +19,7 @@
 body {
     margin:0;
     padding:0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .container {
     display: flex;
@@ -38,7 +38,7 @@ body {
 }
 
 .card {
-    border:1px solid #b9b0b0;
+    border:1px solid #ffffffab;
     border-radius: 5px;
     padding: 20px;
     text-align: center;
