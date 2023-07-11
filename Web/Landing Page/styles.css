@@ -1,3 +1,21 @@
+.hero {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    color: #fff;
+    background: linear-gradient(45deg, #CBFBB9 0%, #feb47b 50%, #CAF2FB 100%);
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+}
+.hero p {
+    font-size: 1.5em;
+}
+
 .menu {
     background-color: #333;
     overflow: hidden;
