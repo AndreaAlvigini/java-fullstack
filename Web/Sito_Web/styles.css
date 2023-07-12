@@ -13,6 +13,7 @@
 }
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 
 }
 body {
@@ -28,6 +29,7 @@ h1 h2 {
 h1 {
     font-size: 6rem;
     text-align: center;
+    color: #22333B;
 }
 
 li  {
@@ -36,11 +38,12 @@ li  {
 
 a {
     text-decoration: none;
-    color: #DDFFF7;
+    color: #EAE0D5;
     
 }
 p {
     display: block;
+    color: #22333B;
 }
 
 
@@ -52,8 +55,10 @@ p {
     margin-top: 0;
     margin-bottom: 0;
     width: 100%;
-    background:#462255;
+    background: #22333B;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    
 }
 
 
@@ -64,14 +69,14 @@ p {
 .nav-list a {
     display: block;
     padding: 2rem;
-    transition: 0.2s ease-in-out;
+    color: #EAE0D5;
+    transition: 0.5s ease-in;
     background-color: transparent;
+    font-size: 1.5rem;
 }
 
 .nav-list a:hover{
-    
-    background: linear-gradient(#462255 0%, #B2746E  100%);
-    
+    color: #C6AC8F;
 }
 
 
@@ -81,14 +86,113 @@ p {
 
 .welcome-section {
     
-
     display:flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     color: #fff;
-    background: linear-gradient(45deg, #B2746E 10%, #462255 50%);
+    /* background: linear-gradient(45deg, #B2746E 10%, #462255 50%); */
+    background: linear-gradient(45deg, #22333B 0%, #EAE0D5 90%);
     text-align: center;
     flex-direction: column;
 }
+
+.welcome-section p {
+    margin-top:30px;
+    font-size: 2rem;
+    font-style: oblique;
+}
+
+
+
+/* Work Section*/
+.works {
+    background-color: #22333B ;
+    /* background-color: #fff; */
+    color: #EAE0D5;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.skills {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.skills h2 {
+    font-weight:500;
+    font-size: 2.5rem;
+}
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+.work-grid h2 {
+    text-align: center;
+}
+.work-grid p {
+    margin-top: 20px;
+}
+.card {
+    border:1px solid #ffffffab;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    border: none;
+    
+}
+
+.card p {
+    color: #EAE0D5;
+}
+
+.fa-java {
+    margin-top: -20px;
+    margin-bottom: 40px !important;
+}
+
+.fa-brands {
+    margin-bottom: 20px;
+}
+
+
+
+.card:hover {
+    transform: scale(1.05);
+    
+}
+
+.card p {
+    font-size: 1.5rem;
+}
+
+/* Contacts */
+
+.contacts {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #AA4465;
+    color: #EAE0D5;
+}
+
+.contacts h2 {
+    font-weight:500;
+    font-size: 2.5rem;
+}
+
+.contacts p {
+    margin-left: 800px ;
+    margin-right: 800px ;
+    margin-top:  10px;
+    display: flex;
+    justify-content:space-evenly;
+
+}
+
 
