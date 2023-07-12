@@ -8,25 +8,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat:ital,wght@0,400;0,700;1,200&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css -->
 </head>
 <body>
-
     <div class="menu">
-        <a href="#backend">Sviluppo Backend</a>
-        <a href="#frontend">Sviluppo Frontend</a>
-        <a href="#database">Gestione Database</a>
+        <a href="#backend">Backend Development</a>
+        <a href="#frontend">Frontend Development</a>
+        <a href="#database">Database Management</a>
+        <a href="#oop">Object Oriented</Object></a>
+        <a href="#contact">Contacts</a>
+        
     </div>
-
     <div class="hero">
+        
         <h1>Il mio Sito Fullstack</h1>
         <p>Scopri le mie competenze di sviluppo</p>
+        
     </div>
-
+    
         <div class="container">
             <div class="section" id="backend">
                 <div class="card">
                     <img src="./img/for-marketers.svg" alt="Backend foto">
-                    <h2>Node.js</h2>
+                    <h2><i class="fa-brands fa-node" style="color: rgb(81, 158, 68)"></i></h2>
                     <p>Competenze in Node.js, Express.js, Django, Ruby on Rails, ecc.</p>
                 </div>
                 <div class="card">
@@ -39,10 +44,9 @@
                     <h2>Django</h2>
                     <p>Competenze in Node.js, Express.js, Django, Ruby on Rails, ecc.</p>
                 </div>
-
             </div>
-
             <div class="section" id="frontend">
+                
                 <div class="card">
                     <img src="./img/for-business.svg" alt="Frontend pic">
                     <h2>HTML</h2>
@@ -59,7 +63,6 @@
                     <p>Competenze in HTML, CSS, JavaScript, React.js, Angular.js ecc.</p>
                 </div>
             </div>
-
             <div class="section" id="database">
                 <div class="card">
                     <img src="./img/for-everyone.svg" alt="DB pics">
@@ -77,7 +80,36 @@
                     <p>Competenze in MySQL, PostgreSQL, MongoDB, Firebase, ecc.</p>
                 </div>
             </div>
-
+                <div class="section" id="oop">
+                    <div class="card">
+                        <img src="./img/for-everyone.svg" alt="Object-oriented Programming">
+                        <h2>Java</h2>
+                        <p>competenze in Java, C++, Python, ecc</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/for-everyone.svg" alt="Object-oriented Programming">
+                        <h2>C++</h2>
+                        <p>competenze in Java, C++, Python, ecc</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/for-designers.svg" alt="Object-oriented Programming">
+                        <h2>Python</h2>
+                        <p>Competenze in  Java, C++, Python, ecc......................................</p>
+                    </div>
+                </div>
+                <div class="section" id="contact">
+                    <h2>Contattami</h2>
+                    <form action="/submit_form" method="POST">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Messaggio:</label>
+                        <textarea name="message" id="message" required></textarea>
+                        <input type="submit" value="invia">
+                    </form>
+                </div>
+            
         </div>
 
 </body>

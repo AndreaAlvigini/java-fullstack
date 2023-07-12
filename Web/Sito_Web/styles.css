@@ -1,0 +1,94 @@
+:root {
+    --main-violet: #462255;
+    --main-red:#AA4465;
+    --main-pink:#FFA69E;
+    --main-blue:#93E1D8;
+    --main-green:#DDFFF7;
+
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+html {
+    box-sizing: border-box;
+
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 h2 {
+    
+    font-weight: 700;
+    text-align: center;
+
+}
+h1 {
+    font-size: 6rem;
+    text-align: center;
+}
+
+li  {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #DDFFF7;
+    
+}
+p {
+    display: block;
+}
+
+
+/* NAV SECTION */
+.nav {
+    display:flex;
+    justify-content: flex-end;
+    position: fixed;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    background:#462255;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+.nav-list {
+    display: flex;
+    
+}
+.nav-list a {
+    display: block;
+    padding: 2rem;
+    transition: 0.2s ease-in-out;
+    background-color: transparent;
+}
+
+.nav-list a:hover{
+    
+    background: linear-gradient(#462255 0%, #B2746E  100%);
+    
+}
+
+
+
+
+/* Welcome Section*/
+
+.welcome-section {
+    
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(45deg, #B2746E 10%, #462255 50%);
+    text-align: center;
+    flex-direction: column;
+}
+

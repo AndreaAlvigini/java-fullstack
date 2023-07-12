@@ -1,3 +1,16 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
 .hero {
     display:flex;
     justify-content: center;
@@ -15,6 +28,7 @@
 .hero p {
     font-size: 1.5em;
 }
+
 
 .menu {
     background-color: #333;
@@ -34,11 +48,8 @@
     color: #ffffff;
 
 }
-body {
-    margin:0;
-    padding:0;
-    font-family: 'Roboto', sans-serif;
-}
+
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -71,8 +82,45 @@ body {
 }
 
 .card img {
-width: 45%;
+width: 30%;
 height: auto;
+}
+
+
+#contact {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact h2 {
+    text-align: center;
+}
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#contact label {
+    font-weight: bold;
+}
+#contact input, #contact textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius:5px;
+}
+#contact input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #666;
+    
+    
+
 }
 
 @media screen and  (min-width: 600px) {
