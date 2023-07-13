@@ -15,7 +15,7 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 100vh;
     color: #fff;
     background: linear-gradient(45deg, #CBFBB9 0%, #feb47b 50%, #CAF2FB 100%);
     text-align: center;
@@ -55,6 +55,21 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding:20px;
+}
+
+.skill {
+    margin: 20px 0;
+}
+.progress {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #4caf50;
+    border-radius: 5px;
 }
 
 .section {
