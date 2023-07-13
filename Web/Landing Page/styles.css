@@ -57,20 +57,44 @@ body {
     padding:20px;
 }
 
+
+
+
+/* progress bar  */
+
 .skill {
     margin: 20px 0;
 }
+
 .progress {
     width: 100%;
     background-color: #ddd;
     border-radius: 5px;
+    position:relative
 }
 
 .progress-bar {
     height: 20px;
     background-color: #4caf50;
+    /* background-image: linear-gradient(to right, red, green, blue); */
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    
 }
+
+.progress-bar span {
+    position: absolute;
+    right: 10px;
+}
+
+/* Progress bar  */
 
 .section {
     display:grid;
@@ -101,6 +125,10 @@ width: 30%;
 height: auto;
 }
 
+/* .card i {
+    font-size:2em;
+    margin-bottom:20px;
+} */
 
 #contact {
     width: 100%;
